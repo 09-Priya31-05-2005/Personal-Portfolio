@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyadarshini | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Priyadarshini Nagalapuram</div>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('achievements')">Achievements</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+      <button id="toggleMode" onclick="toggleMode()">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="section active home-flex">
+      <div class="home-left">
+        <img src="images/your_photo.jpg" alt="Priyadarshini" class="profile-img-side">
+      </div>
+      <div class="home-right">
+        <h1>Hi, I'm Priyadarshini</h1>
+        <p><span class="typed-text"></span><span class="cursor">|</span></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a tech enthusiast, passionate and creative individual with a strong foundation in web development, database programming, and system design. I enjoy building user-friendly web applications and solving real-world problems using technology. My journey includes diverse experiences ranging from developing LAN issue tracking systems to working on Olympic-themed projects and oral cancer detection using pattern recognition.</p>
+      <p>Beyond coding, I am skilled in visual design with tools like Canva and video editing software, which allows me to blend technology with creativity. I'm also an active NCC cadet, which has taught me leadership, teamwork, and discipline. With an eye for detail and a love for learning, I am constantly exploring new ways to grow and contribute meaningfully to every project I undertake.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">C</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Science</div>
+        <div class="skill">Git</div>
+      </div>
+
+      <h2>Editing & Creative Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Canva</div>
+        <div class="skill">Video Editing</div>
+        <div class="skill">Photography</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Network Access Registration system</h3>
+        <p>NARS (Network Access Registration System) is a web-based platform designed to streamline the process of registering student-owned devices for campus LAN access. 
+            Students can log in using their email credentials and submit essential details like MAC and IP addresses. Developed using HTML, CSS (front-end), and PHP with phpMyAdmin (back-end), NARS replaces manual processes with a secure, automated system. 
+            It simplifies device registration, enhances connectivity management, and ensures reliable network access. 
+            The goal is to improve the campus experience by promoting a more connected and digitally integrated environment.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Automatic Evaluation of MathBERT  Embeddings of Student's Algebra Question</h3>
+        <p>Automates grading of descriptive algebra answers using MathBERT embeddings and machine learning models. 
+            We transformed student responses into 385-dimensional embeddings and tested classifiers like SVM, KNN, Decision Trees, and Random Forest. 
+            SVM achieved the best performance across accuracy, precision, and F1-score. The system enhances grading consistency, reduces manual effort, and provides quick feedback. 
+            Feature selection improved model reliability, making this approach suitable for scalable academic evaluation.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Vein Detector-Automated Blood Drawing System</h3>
+        <p>This project involves designing a portable, low-cost vein detection system to assist in automated blood collection and injection. Using infrared imaging with a Raspberry Pi 4B and NoIR Camera, the device identifies veins not visible to the naked eye. The prototype processes real-time images to highlight veins using machine learning and image processing. Simulations were done on TinkerCAD, and the final prototype uses 940nm IR LEDs and photodiodes. Future enhancements include projecting vein maps on the skin and improving battery efficiency. The system aims to improve accuracy, hygiene, and patient comfort in clinical and rural healthcare environments.</p>
+      </div>
+      <div class="project-card">
+        <h3>QuickBite-Online Grocery Shopping Web Application</h3>
+        <p>QuickBite is a user-friendly online grocery shopping platform developed using Human-Computer Interaction (HCI) principles. The system supports multiple login options (phone, Google, Facebook) and provides a secure OTP and CAPTCHA-based authentication process. Users can easily search for items, browse by categories, view best deals, and add products to cart or favorites. The platform offers a clean interface with personalized sections like “Most Popular,” “Recommended,” and “Shop Now.” The checkout process is intuitive, featuring address saving, promo codes, and multiple payment modes (Credit/Debit, COD).
+            The app applies key HCI concepts such as visibility, consistency, feedback, and error prevention, supported by cognitive design principles like Fitts' Law and Gestalt principles. Animated delivery tracking, simplified forms, and real-time updates enhance usability. Overall, the project emphasizes a seamless, accessible, and efficient shopping experience that meets both user needs and HCI standards.
+        </p>
+      </div>
+      <div class="project-card">
+        <h3>Dual Hormone Artificial Pancreas</h3>
+        <p>Dual Hormone Artificial Pancreas-Bi Hormonal pump that delivers Both Insulin and Glucagon.
+            The project introduces a dual hormone artificial pancreas designed to regulate blood glucose by delivering both insulin and glucagon, mimicking the natural pancreatic function. 
+            Unlike conventional single-hormone systems, this bi-hormonal pump offers better control over both high and low glucose levels, preventing hypoglycemia effectively. 
+            Using an ESP32 microcontroller, a TCS3472 color sensor, and an OLED display, the system detects glucose concentrations in real time via colorimetric reactions. 
+            Polynomial regression was used to calibrate sensor readings with near-perfect accuracy. Based on the glucose level, relay modules activate the appropriate hormone pump—insulin for high and glucagon for low levels. 
+            The setup includes medical-grade components such as silicone tubing and peristaltic pumps for hormone delivery. 
+            The prototype successfully demonstrates real-time monitoring, decision-making, and response, replicating an artificial pancreas function. This system showcases a cost-effective, responsive, and user-friendly medical simulation. 
+            The project confirms the feasibility of using embedded systems and sensor-based automation in biomedical device design.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Corporal Rank - NCC unit of Indian Institute of Information Technology Design and Manufacturing Kancheepuram</li>
+        <li>EBSB National Camp at Madurai under Traing of NCC</li>
+        <li>'A' Grade in NCC B-Certificate 2024</li>
+      </ul>
+
+      <h2>NCC Journey</h2>
+      <p>
+        I have been an active cadet in the National Cadet Corps (NCC). This journey taught me discipline, leadership, and the importance of serving the nation. I participated in camps, parades, and social activities which helped build character and resilience.
+        i have attended EBSB-2023 National Camp a pretigious Camp held at NCC Training Area Idayapatti-Madurai TamilNadu in the year of 2023 August.
+      </p>
+
+      <h2> Volunteering Experience</h2>
+      <ul>
+        <li>Placement Cell Volunteer</li> 
+        <li>Vashisht 2024 - Event Management Volunteer</li>
+      </ul>
+      
+      <h2>Languages Known</h2>
+      <ul>
+        <li>Telugu</li>
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Tamil</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:darshinin31@gmail.com.com">darshinin31@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/priyadarshini-nagalapuram" target="_blank">www.linkedin.com/in/priyadarshini-nagalapuram</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Priyadarshini. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
