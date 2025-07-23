@@ -83,7 +83,4 @@ Includes clickable email and LinkedIn links to facilitate professional networkin
 
 ### **Conclusion**
 
-Priyadarshini’s personal portfolio is not just a digital CV — it is a thoughtfully crafted representation of her journey, personality, and capabilities in both tech and creative domains. It balances functionality and aesthetics, showcasing her command over front-end development, ability to build full-stack solutions (as seen in NARS), her exploration in machine learning, and a flair for creative content editing.
-
-With added emphasis on usability, accessibility, and responsive design, this portfolio is well-suited for internships, academic applications, or professional networking. Its extensible structure allows future additions like project galleries, resume downloads, contact forms, and blog sections.
-
+My personal portfolio is not just a digital CV — it is a thoughtfully crafted representation of my journey, personality, and capabilities in both tech and creative domains. It balances functionality and aesthetics, showcasing my command over front-end development, ability to build full-stack solutions (as seen in NARS), my exploration in machine learning, and a flair for creative content editing.
